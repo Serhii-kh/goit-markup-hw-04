@@ -3,7 +3,8 @@
   --main-color: #212121;
   --fone-color: #757575;
   --main-bg-color: #ffffff;
-	--border-color: #EEEEEE;
+  --border-color: #eeeeee;
+  --bg-second-color: #f5f4fa;
 }
 
 body {
@@ -41,6 +42,28 @@ img {
   padding: 0 15px;
 }
 
+.contacts.icon-tel::before {
+  display: inline-block;
+  content: '';
+  height: 14px;
+  width: 10px;
+  background-image: url(../images/icon-images/smartphone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.contacts.icon-mail::before {
+  display: inline-block;
+  content: '';
+  height: 12px;
+  width: 16px;
+  background-image: url(../images/icon-images/mail.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
 .main-nav-list {
   display: flex;
   margin-left: 95px;
@@ -76,7 +99,7 @@ img {
 
 .contacts-list {
   display: flex;
-  margin-left: 340px;
+  margin-left: auto;
 }
 
 .logo {
@@ -91,7 +114,6 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 
 .hero-title {
   font-weight: 900;
@@ -117,6 +139,22 @@ img {
   cursor: pointer;
   padding: 10px 32px;
   margin-top: 30px;
+}
+
+.hero-section.section.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-Img.jpg);
 }
 
 .div-header {
@@ -166,6 +204,34 @@ img {
 .peculiarities-discription {
   font-size: 14px;
   line-height: 1.7;
+}
+
+.peculiarities-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--bg-second-color);
+}
+
+.pec-one::before {
+  background-image: url(../images/icon-images/antenna\ 1.svg);
+}
+
+.pec-two::before {
+  background-image: url(../images/icon-images/clock\ 1.svg);
+}
+
+.pec-three::before {
+  background-image: url(../images/icon-images/diagram\ 1.svg);
+}
+
+.pec-four::before {
+  background-image: url(../images/icon-images/astronaut\ 1.svg);
 }
 
 .section {
@@ -230,7 +296,7 @@ img {
 }
 
 .team-list-item {
-   background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 }
 
 .team-list-item {
@@ -241,7 +307,7 @@ img {
 
 .team {
   line-height: 1.2;
-  background-color: #f5f4fa;
+  background-color: var(--bg-second-color);
 }
 
 .logo {
@@ -276,7 +342,7 @@ img {
 
 .button {
   font-weight: 500;
-  background: #f5f4fa;
+  background: var(--bg-second-color);
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -304,17 +370,17 @@ img {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 4px;
-	border-left: 1px solid var(--border-color);
-	border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 
 .portfolio-discription {
   line-height: 1.875;
   padding-left: 24px;
   padding-bottom: 20px;
-	border-left: 1px solid var(--border-color);
-	border-right: 1px solid var(--border-color);
-	border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .portfolio-list {
