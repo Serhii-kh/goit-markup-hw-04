@@ -5,6 +5,7 @@
   --main-bg-color: #ffffff;
   --border-color: #eeeeee;
   --bg-second-color: #f5f4fa;
+	--for-icons-color: #AFB1B8;
 }
 
 body {
@@ -190,7 +191,8 @@ img {
   display: flex;
 }
 
-.peculiarities-list .peculiarities-item:not(:last-child) {
+.peculiarities-list .peculiarities-item:not(:last-child),
+.clients-list > .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -252,7 +254,8 @@ img {
 }
 
 .our-work-title,
-.team-title {
+.team-title,
+.clients-title {
   margin-bottom: 50px;
 }
 
@@ -265,7 +268,8 @@ img {
 }
 
 .team-title,
-.our-work-title {
+.our-work-title,
+.clients-title {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -287,7 +291,8 @@ img {
   margin-bottom: 10px;
 }
 
-.team-list {
+.team-list,
+.clients-list {
   display: flex;
 }
 
