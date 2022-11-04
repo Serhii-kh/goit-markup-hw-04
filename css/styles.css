@@ -43,27 +43,8 @@ img {
   padding: 0 15px;
 }
 
-.contacts.icon-tel::before {
-  display: inline-block;
-  content: '';
-  height: 14px;
-  width: 10px;
-  background-image: url(../images/icon-images/smartphone.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
 
-.contacts.icon-mail::before {
-  display: inline-block;
-  content: '';
-  height: 12px;
-  width: 16px;
-  background-image: url(../images/icon-images/mail.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
+
 
 .main-nav-list {
   display: flex;
@@ -212,7 +193,6 @@ img {
   display: block;
   content: '';
   height: 120px;
-  background-size: 70px 70px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
@@ -221,19 +201,19 @@ img {
 }
 
 .pec-one::before {
-  background-image: url(../images/icon-images/antenna\ 1.svg);
+  background-image: url(../images/icon-images/);
 }
 
 .pec-two::before {
-  background-image: url(../images/icon-images/clock\ 1.svg);
+  background-image: url(../images/);
 }
 
 .pec-three::before {
-  background-image: url(../images/icon-images/diagram\ 1.svg);
+  background-image: url(../images/);
 }
 
 .pec-four::before {
-  background-image: url(../images/icon-images/astronaut\ 1.svg);
+  background-image: url(../images/);
 }
 
 .section {
@@ -340,6 +320,34 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.icon-mail::before {
+	content: "";
+	width: 16px;
+	height: 12px;
+	background-image: url(../images/icon-images/mail.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 10px;
+}
+
+.icon-tel::before {
+	content: "";
+	width: 10px;
+	height: 16px;
+	background-image: url(../images/icon-images/smartphone.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 10px;
+}
+
+.icon-mail,
+.icon-tel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .contacts:hover,
 .contacts:focus {
   color: var(--focus-color);
