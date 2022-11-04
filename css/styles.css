@@ -5,7 +5,7 @@
   --main-bg-color: #ffffff;
   --border-color: #eeeeee;
   --bg-second-color: #f5f4fa;
-	--for-icons-color: #AFB1B8;
+  --for-icons-color: #afb1b8;
 }
 
 body {
@@ -42,9 +42,6 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-
-
 
 .main-nav-list {
   display: flex;
@@ -201,19 +198,19 @@ img {
 }
 
 .pec-one::before {
-  background-image: url(../images/icon-images/);
+  background-image: url(../images/icon-images/antenna.svg);
 }
 
 .pec-two::before {
-  background-image: url(../images/);
+  background-image: url(../images/icon-images/clock.svg);
 }
 
 .pec-three::before {
-  background-image: url(../images/);
+  background-image: url(../images/icon-images/diagram.svg);
 }
 
 .pec-four::before {
-  background-image: url(../images/);
+  background-image: url(../images/icon-images/astronaut.svg);
 }
 
 .section {
@@ -262,7 +259,7 @@ img {
 }
 
 .team-list-discription {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-list-title {
@@ -274,6 +271,39 @@ img {
 .team-list,
 .clients-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--for-icons-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: solid 1px var(--for-icons-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--focus-color);
+}
+
+.clients-link:hover .clients-icon-div,
+.clients-link:focus .clients-icon-div {
+  border-color: var(--focus-color);
 }
 
 .team-list-item:not(:last-child) {
@@ -312,6 +342,10 @@ img {
 }
 
 .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -321,31 +355,42 @@ img {
   padding-bottom: 20px;
 }
 
-.icon-mail::before {
-	content: "";
-	width: 16px;
-	height: 12px;
-	background-image: url(../images/icon-images/mail.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin-right: 10px;
-}
-
-.icon-tel::before {
-	content: "";
-	width: 10px;
-	height: 16px;
-	background-image: url(../images/icon-images/smartphone.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	margin-right: 10px;
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .icon-mail,
-.icon-tel {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.icon-tel,
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--for-icons-color);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--main-bg-color);
+  background-color: var(--focus-color);
 }
 
 .contacts:hover,
